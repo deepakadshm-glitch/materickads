@@ -1,56 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ANANT LADHA Masterclass</title>
+<title>Deepak Wadhwa - Free Masterclass</title>
 <style>
-body{margin:0;background:#020d1f;color:#fff;font-family:Arial;text-align:center}
-.hero{max-width:480px;margin:auto;padding:20px}
-.photo{width:220px;height:220px;border-radius:50%;border:5px solid #00e5ff}
-.btn{background:#00e5ff;color:#000;padding:18px;width:100%;border-radius:50px;font-size:20px;font-weight:bold;border:none}
-.btn:disabled{background:#555}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#050c1a;color:#fff;font-family:Arial,sans-serif;text-align:center}
+.top{background:#00e5ff;color:#000;padding:12px;font-weight:bold;font-size:13px}
+.wrap{max-width:440px;margin:auto;padding:20px}
+.photo{width:220px;height:220px;border-radius:50%;border:3px solid #00e5ff;display:block;margin:20px auto;object-fit:cover}
+h1{font-size:30px;font-weight:800;line-height:1.1;margin:15px 0}
+.btn{display:block;background:#00e5ff;color:#000;padding:18px;border-radius:10px;font-size:20px;font-weight:800;text-decoration:none;margin:15px 0}
+.timer{display:flex;gap:8px;margin:15px 0}
+.timer div{flex:1;border:1px solid #00e5ff;padding:12px 5px;border-radius:8px;background:#000}
+.timer b{color:#00e5ff;font-size:28px;display:block}
+.box{border:1px solid rgba(0,229,255,0.2);background:rgba(0,229,255,0.05);border-radius:10px;padding:15px;text-align:left;margin:15px 0;font-size:13px;line-height:1.7}
 </style>
- <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1086494104343606');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1086494104343606&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
 </head>
 <body>
-<div class="hero">
+<div class="top">🔴 LIVE TODAY 8 PM | 10,342+ JOINED | 100% FREE</div>
+<div class="wrap">
 <img class="photo" src="deepak.jpg">
-<h1>FREE STOCK MARKET MASTERCLASS</h1>
-<p style="color:#00e5ff">5 Powerful Concepts</p>
-<p>With <b>ANANT LADHA</b> - Trader & Mentor</p>
-<div style="text-align:left;background:rgba(255,255,255,0.1);padding:15px;border-radius:10px">
-✓ Chart Basics<br>✓ Trend Identification<br>✓ Risk Management<br>✓ Practical + Live Q&A
-</div><br>
-<button id="joinBtn" class="btn" disabled>Verifying... 5 Sec</button>
-<p style="font-size:11px;color:#aaa">Educational Only<br>t.me/+Zt5Y54wGrxpmMGI1</p>
+<p style="font-weight:bold;font-size:20px">With Deepak Wadhwa</p>
+<p style="color:#00e5ff;font-size:11px;margin-bottom:10px">Trader & Mentor | 10+ Years Exp</p>
+<h1>FREE STOCK MARKET<br><span style="color:#00e5ff">MASTERCLASS</span></h1>
+<a href="https://t.me/+shz3zvWeLEJiMmFl" class="btn" target="_blank">✈ JOIN TELEGRAM NOW</a>
+<p style="color:#00e5ff;text-align:left;font-size:12px">MASTERCLASS STARTS IN:</p>
+<div class="timer"><div><b id="d">02</b><span style="font-size:10px;color:#888">DAYS</span></div><div><b id="h">14</b><span style="font-size:10px;color:#888">HOURS</span></div><div><b id="m">33</b><span style="font-size:10px;color:#888">MINS</span></div><div><b id="s">10</b><span style="font-size:10px;color:#888">SECS</span></div></div>
+<div class="box"><b style="color:#00e5ff">✨ BONUS WHEN YOU JOIN NOW</b><br>✅ Workbook PDF<br>✅ Screener Template<br>✅ Live Q&A Replay</div>
+<div class="box"><b>WHAT YOU'LL LEARN</b><br>• Analyze Stocks in 15 Mins<br>• Risk Management Basics<br>• High-Growth Stocks<br><br><span style="color:#f5d47a">⭐ Trusted by 10,000+ Learners</span></div>
+<a href="https://t.me/+shz3zvWeLEJiMmFl" class="btn" target="_blank">✈ JOIN AGAIN - 500 Seats Left</a>
+<p style="font-size:11px;color:#00e5ff;margin-top:15px">t.me/+shz3zvWeLEJiMmFl | Today 8 PM Live</p>
 </div>
-<script>
-let btn=document.getElementById('joinBtn');
-let start=Date.now();
-setTimeout(()=>{btn.disabled=false;btn.innerText="JOIN TELEGRAM NOW";},5000);
-btn.onclick=()=>{
- if(Date.now()-start<6000) return;
- if(btn.dataset.c) return;
- btn.dataset.c=1;
- btn.innerText="Redirecting...";
- setTimeout(()=>{window.location.href="https://t.me/+Zt5Y54wGrxpmMGI1";},800);
-}
-</script>
+<script>let t=2*86400+14*3600+33*60+10;setInterval(()=>{t--;document.getElementById('d').innerText=Math.floor(t/86400);document.getElementById('h').innerText=Math.floor((t%86400)/3600);document.getElementById('m').innerText=Math.floor((t%3600)/60);document.getElementById('s').innerText=t%60;},1000);</script>
 </body>
 </html>
